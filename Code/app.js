@@ -9,6 +9,7 @@ const shopRoutes = require("./routes/store");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "public"))); // serve static files like css, js, images, etc.
 
 // order of routes matters because the first route that matches will be used
 app.use("/admin", adminRoutes);
