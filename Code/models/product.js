@@ -29,6 +29,7 @@ module.exports = class Product {
 
   save() {
     // make sure to use arrow function to access this so that "this" doesn't loose its context and refers to the class
+    this.id = Math.random().toString(); // generate a random string as id
     getProductsFromFile((products) => {
       products.push(this); // this refers to the current object of the class
       fs.writeFile(p, JSON.stringify(products), (err) => {
@@ -40,5 +41,12 @@ module.exports = class Product {
   // static methods are called on the class itself and not on the instances of the class
   static fetchAll(cb) {
     getProductsFromFile(cb);
+  }
+
+  static findById(id, cb) {
+    getProductsFromFile((products) => {
+      const product = products.find((p) => p.id === id);
+      cb(product);
+    });
   }
 };

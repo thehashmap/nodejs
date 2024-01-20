@@ -1,30 +1,16 @@
 [
-    {
-        "title": "One Punch Man",
-        "imageUrl": "https://picsum.photos/100",
-        "price": 19.99,
-        "description": "A story about a superhero who can defeat any opponent with a single punch.",
-        "id": "1"
-    },
-    {
-        "title": "GTO",
-        "imageUrl": "https://picsum.photos/100",
-        "price": 14.99,
-        "description": "A comedy-drama manga about a former gang member turned teacher.",
-        "id": "2"
-    },
-    {
-        "title": "Pokemon",
-        "imageUrl": "https://picsum.photos/100",
-        "price": 9.99,
-        "description": "A popular franchise about capturing and training creatures called Pokemon.",
-        "id": "3"
-    },
-    {
-        "title": "Dragon Ball Z",
-        "imageUrl": "https://picsum.photos/100",
-        "price": 24.99,
-        "description": "An action-packed anime series featuring powerful martial artists.",
-        "id": "4"
-    }
+  {
+    "title": "Shoes",
+    "imageUrl": "https://picsum.photos/200",
+    "price": "9999",
+    "description": "Air Jordan",
+    "id": "0.8292752318621484"
+  },
+  {
+    "title": "Bottle",
+    "imageUrl": "https://picsum.photos/200",
+    "price": "356",
+    "description": "",
+    "id": "0.8846629225583329"
+  }
 ]

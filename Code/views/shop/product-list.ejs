@@ -19,7 +19,7 @@
                                     <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
                                 </div>
                                 <div class="card__content">
-                                    <h2 class="product__price">$
+                                    <h2 class="product__price">₹
                                         <%= product.price %>
                                     </h2>
                                     <p class="product__description">
@@ -27,9 +27,13 @@
                                     </p>
                                 </div>
                                 <div class="card__actions">
-                                    <form action="/add-to-cart" method="POST">
-                                        <button class="btn">Add to Cart</button>
-                                    </form>
+                                    <a href="/products/<%= product.id %>" class="btn">Details</a>
+                                     <!-- In a for loop, we need to pass data to an included file by passing an object as a second argument to the include
+                                    function. This object will be available in the included file as a variable with the same name as the key of the object.
+                                    In this case, we pass the product object to the included file and it will be available as a variable named product in
+                                    the included file.  -->
+
+                                    <%- include('../includes/add-to-cart.ejs', {product: product}) %> 
                                 </div>
                             </article>
                             <% } %>
